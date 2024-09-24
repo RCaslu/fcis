@@ -1,7 +1,6 @@
 import Link from "@/components/ui/link";
 import Video from "../_components/video";
 import React from "react";
-import Image from 'next/image'
 
 const Page1 = () => {
     return (
@@ -14,15 +13,15 @@ const Page1 = () => {
         }}
       >
         {/* Additional image */}
-        <Image
-          src="/01/LOGO.png" // Path to the additional image
+        <img
+          src="./01/LOGO.png" // Path to the additional image
           alt="Logo"
           style={{
             position: 'absolute',
             top: '20px', // Adjust as needed
             left: '50%',
             transform: 'translateX(-50%)',
-            zIndex: 1
+            zIndex: 1,
           }}
         />
         {/* Content div */}
@@ -43,7 +42,7 @@ const Page1 = () => {
           <Video path="./videos/Método CIS.mp4" />
             <div className="flex justify-center py-6">
             <Link href="#Payments" className="rounded-xl justify-center" variant={"goldFCS"}>
-            GARANTIR MINHA VAGA
+            GARANTIR MINHA VAGA!
             </Link>
             </div>
         </div>
